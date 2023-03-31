@@ -12,5 +12,6 @@ jobs:
     steps:
       - uses: actions/add-to-project@v0.4.1
         with:
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           project-url: https://github.com/users/ruchira-gp/projects/2
           labeled: needs-triage
